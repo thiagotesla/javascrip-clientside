@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detran</title>
+    <style>
+        h1{
+            color: rgb(78, 78, 78);
+        }
+        body{
+            background-color: rgb(247, 247, 247);
+        }
+        input{
+            color: blueviolet;
+            background-color: rgb(230, 230, 230);
+        }
+        div#div1{
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+    <h1>Verificando multa.</h1>
+    
+    <div> Limite de velocidade = 60km/h</div>
+
+    Você passou a : <input type="number" name="n1" id="n1"> km/h
+
+
+    <input type="button" value="Verificar" onclick="verificar()">
+
+    <div id="div2"></div>
+    
+
+    <script>
+
+        function verificar(){
+            let valor = +document.getElementById('n1').value
+            let res = document.getElementById('div2')
+                if(valor>60 && valor<=100){
+                    res.innerHTML = 'Multado.'
+                }else if(valor>100){
+                    res.innerHTML = 'Você é o Torreto, seu arrombado?'
+                }else{
+                    res.innerHTML = 'Você não foi multado.'
+                }
+                
+        }
+    </script>
+</body>
+
+</html>
