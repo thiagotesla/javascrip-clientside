@@ -17,6 +17,13 @@ section{
     box-shadow: 5px 5px 5px rgba(63, 62, 62, 0.5);
 }
 
+input#input1{
+    background-color: white;
+}
+div#div2{
+    text-align: center;
+    padding: 8px;
+}
 footer{
     color: white;
     text-align: center;
