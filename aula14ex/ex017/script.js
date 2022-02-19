@@ -6,11 +6,11 @@ function tabuada() {
         window.alert('Digite um número')
     } else {
         let n = +numero
-        let i = 1
+        let i = 0
         tabuada.innerHTML = ''
         while (i <= 10) {
             let item = document.createElement('li')
-            item.innerHTML = `${n} x ${i} = ${n * i}`
+            item.innerHTML = `${n} x ${i} = ${n * i} <ln>`
             tabuada.appendChild(item)
             i++
         }
